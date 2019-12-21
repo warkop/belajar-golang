@@ -5,6 +5,13 @@ import (
 	"strings"
 )
 
+// callback bisa juga di daftarkan supaya mempunyai alias
+// type FilterCallback func(string) bool
+
+// func filter(data []string, callback FilterCallback) []string {
+// 	// ...
+// }
+
 func filter(data []string, callback func(string) bool) []string {
 	var result []string
 	for _, each := range data {
