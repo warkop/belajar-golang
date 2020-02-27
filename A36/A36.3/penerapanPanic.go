@@ -22,7 +22,7 @@ func main() {
 	if valid, err := validate(name); valid {
 		fmt.Println("halo", name)
 	} else {
-		panic(err.Error())
 		fmt.Println("end")
+		panic(err.Error())
 	}
 }
