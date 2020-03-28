@@ -1,7 +1,8 @@
 package main
+
 import "fmt"
 
-func main()  {
+func main() {
 	//beserta tipe variabel
 	// var firstName string = "john"
 	// var lastName string
@@ -22,7 +23,7 @@ func main()  {
 	//deklarasi menggunakan keyword new
 	name := new(string)
 
-	fmt.Println(name)   // 0x20818a220
-	fmt.Println(*name)  // ""
+	fmt.Println(name)  // 0x20818a220
+	fmt.Println(*name) // ""
 	// fmt.Printf("halo %s!\n", name)
 }
