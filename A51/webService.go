@@ -22,7 +22,7 @@ var data = []student{
 func users(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
-	if r.Method == "POST" {
+	if r.Method == "GET" {
 		var result, err = json.Marshal(data)
 
 		if err != nil {
@@ -40,7 +40,7 @@ func users(w http.ResponseWriter, r *http.Request) {
 func user(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
-	if r.Method == "POST" {
+	if r.Method == "GET" {
 		var id = r.FormValue("id")
 		var result []byte
 		var err error
@@ -70,6 +70,6 @@ func main() {
 	http.HandleFunc("/users", users)
 	http.HandleFunc("/user", user)
 
-	fmt.Println("Starting web server at http://localhost:8000")
-	http.ListenAndServe(":8000", nil)
+	fmt.Println("Starting web server at http://localhost:7000")
+	http.ListenAndServe(":7000", nil)
 }
