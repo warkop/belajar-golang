@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 	"runtime"
 )
 
@@ -27,4 +28,6 @@ func main() {
 
 	var message3 = <-messages
 	fmt.Println(message3)
+	fmt.Println("type messages :", reflect.TypeOf(messages))
+	fmt.Println("type message3 :", reflect.TypeOf(message3))
 }

@@ -12,7 +12,7 @@ func print(till int, message string) {
 }
 
 func main() {
-	runtime.GOMAXPROCS(16)
+	runtime.GOMAXPROCS(2)
 
 	go print(5, "halo")
 	print(5, "apa kabar")
