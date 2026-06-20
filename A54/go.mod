@@ -2,4 +2,4 @@ module a54
 
 go 1.14
 
-require go.mongodb.org/mongo-driver v1.7.1
+require go.mongodb.org/mongo-driver v1.17.7
